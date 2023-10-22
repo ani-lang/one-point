@@ -70,7 +70,7 @@
                         <version>0.22.0</version>
                         <configuration>
                             <excludes combine.children="append">
-                                <exclude>checkstyle:/src/test/resources/.*</exclude>
+                                <exclude>checkstyle:.*/src/test/resources/.*</exclude>
                                 <exclude>pmd:.*/src/test/resources/.*</exclude>
                                 <exclude>dependencies:.*</exclude>
                                 <exclude>duplicatefinder:.*</exclude>
