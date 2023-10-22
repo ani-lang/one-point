@@ -12,11 +12,11 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * A xml file.
+ * A xml config  file.
  *
  * @since 0.1.0
  */
-public final class XmlFile {
+public final class Configuration {
 
     /**
      * The xml file.
@@ -29,7 +29,7 @@ public final class XmlFile {
      * @param input Xml file.
      * @throws IOException IO error.
      */
-    public XmlFile(final InputStream input) throws IOException {
+    public Configuration(final InputStream input) throws IOException {
         this.xml = new XMLDocument(input);
     }
 

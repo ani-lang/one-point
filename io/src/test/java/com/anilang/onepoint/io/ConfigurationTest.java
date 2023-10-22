@@ -13,13 +13,13 @@ import org.junit.jupiter.api.Test;
  *
  * @since 0.1.0
  */
-class XmlFileTest {
+class ConfigurationTest {
 
     // @checkstyle JavadocMethodCheck (1000 lines)
     @Test
     void readConfigVersion() throws IOException {
         Assertions.assertEquals(
-            new XmlFile(
+            new Configuration(
                 this.getClass().getResourceAsStream(
                     "/io/no-info.xml"
                 )
@@ -32,7 +32,7 @@ class XmlFileTest {
     @Test
     void invalidFile() throws IOException {
         Assertions.assertEquals(
-            new XmlFile(
+            new Configuration(
                 this.getClass().getResourceAsStream(
                     "/io/invalid/no-config.xml"
                 )
