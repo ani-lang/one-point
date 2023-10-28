@@ -6,7 +6,11 @@
  * Property of ani-lang project.
  */
 
-package com.ani.onepoint;
+/*
+ * Property of ani-lang project.
+ */
+
+package com.ani.onepoint.exceptions;
 
 /**
  * Custom IO exception.

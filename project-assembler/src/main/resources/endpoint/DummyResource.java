@@ -1,0 +1,19 @@
+/*
+ * Property of ani-lang project.
+ */
+
+import java.time.LocalDateTime;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("dummy")
+public final class Remuneracion {
+
+    @GetMapping
+    public ResponseEntity<String> get() {
+        return ResponseEntity.ok(LocalDateTime.now().toString());
+    }
+}

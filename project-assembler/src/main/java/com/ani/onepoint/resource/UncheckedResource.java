@@ -2,8 +2,17 @@
  * Property of ani-lang project.
  */
 
-package com.ani.onepoint;
+/*
+ * Property of ani-lang project.
+ */
 
+/*
+ * Property of ani-lang project.
+ */
+
+package com.ani.onepoint.resource;
+
+import com.ani.onepoint.exceptions.ProjectIoException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Optional;
