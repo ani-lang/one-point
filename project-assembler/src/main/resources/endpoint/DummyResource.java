@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("dummy")
-public final class Remuneracion {
+public final class DummyResource {
 
     @GetMapping
     public ResponseEntity<String> get() {
