@@ -50,7 +50,10 @@ public final class WithGatewayPiece implements ProjectPiece {
     @Override
     public void build(final Path root) {
         this.decorated.build(root);
-        final String yaml = new Yaml().dumpAs(
+        final DumperOptions options = new DumperOptions();
+        options.setIndicatorIndent(2);
+        options.setIndentWithIndicator(true);
+        final String yaml = new Yaml(options).dumpAs(
             new Configuration(
                 new Spring(
                     new Cloud(
