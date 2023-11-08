@@ -5,9 +5,9 @@
 package com.ani.onepoint.pieces;
 
 import com.ani.onepoint.JavaPackagePath;
+import com.ani.onepoint.ProjectArtifactId;
 import com.ani.onepoint.resource.DummyEndpointResource;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 /**
  * Project piece decorator to put a dummy endpoint that responds the time everytime it is being
@@ -39,7 +39,7 @@ public final class WithDummyEndpointPiece implements ProjectPiece {
         new DummyEndpointResource().clone(
             new JavaPackagePath(
                 root,
-                Paths.get("")
+                new ProjectArtifactId().path()
             ).resolve()
         );
     }
